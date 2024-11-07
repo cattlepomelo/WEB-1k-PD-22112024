@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <label for="Name">Text</label>
+    <input type="text" id="Name" />
+    <button id="button">Apply</button>
+    <script>
+      console.log("Andrejs Nikolajevs");
+      function NameValue() {
+        const value = document.getElementById("Name");
+        console.log(value.value);
+      }
+      NameValue();
+      function printName(Name) {
+        console.log(Name);
+      }
+
+      const button = document.getElementById("button");
+      button.addEventListener("click", function () {
+        const value = document.getElementById("Name");
+        console.log(value.value);
+      });
+    </script>
+  </body>
+</html>
