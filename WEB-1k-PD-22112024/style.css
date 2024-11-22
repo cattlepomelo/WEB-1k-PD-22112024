@@ -1,0 +1,14 @@
+h1{
+    text-align: center;
+}
+form{
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #d4cdcd;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+input,select{
+    display: block;
+}

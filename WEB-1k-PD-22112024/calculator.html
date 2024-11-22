@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+  </head>
+  <body>
+    <input type="text" id="num1" />
+    <input type="text" id="zime" />
+    <input type="text" id="num2" />
+    <button id="btn">Aprēķināt</button>
+    <script>
+      function Semakina() {
+        if (document.getElementById("zime").value == "+") {
+          let sum =
+            parseInt(document.getElementById("num1").value) +
+            parseInt(document.getElementById("num2").value);
+          return sum;
+          console.log(sum);
+        }
+        document
+          .getElementById("btn")
+          .value.addEventListener("click", Semakina);
+      }
+    </script>
+  </body>
+</html>
